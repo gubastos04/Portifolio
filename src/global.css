@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* COLORS */
+  --background: rgb(40, 44, 51);
+  --backgroundGray: rgba(78, 78, 78, 0.2);
+  --purple: rgb(199, 120, 221);
+  --purple-rgb: 199 120 221;
+  --white: rgb(255, 255, 255);
+  --gray: rgba(255, 255, 255, 0.7);
+
+  /* FONTS */
+  --primaryFont: "Jetbrains mono", monospace;
+  --secondaryFont: "Space Grotesk", sans-serif;
+
+  /* SIZES */
+  --small: 0.875rem;
+  --smallMobile: 0.635rem;
+  --medium: 1.25rem;
+  --mediumMobile: 1rem;
+  --large: 2rem;
+  --largeMobile: 1.6rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1600px;
+  background-color: var(--background);
+  font-family: var(--primaryFont);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  & .hash {
+    color: var(--purple);
+    font-size: var(--large);
+    margin-right: 0.5rem;
+  }
+  & h1 {
+    font-family: var(--primaryFont);
+    letter-spacing: 0.15rem;
+    font-size: var(--large);
+    color: var(--white);
+    white-space: nowrap;
+  }
+  & .lines {
+    border-top: 1px solid var(--purple);
+    flex: 1;
+    height: 1px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    max-width: 480px;
+  }
+  .section-header {
+    gap: 0.5rem;
+    & .hash {
+      font-size: var(--mediumMobile);
+    }
+    & h1 {
+      font-size: var(--mediumMobile);
+    }
+  }
+}
+
+/* Tablet */
+
+@media (min-width: 480px) and (max-width: 768px) {
+  body {
+    max-width: 700px;
+  }
+  .section-header {
+    gap: 0.5rem;
+    & .hash {
+      font-size: var(--mediumMobile);
+    }
+    & h1 {
+      font-size: var(--mediumMobile);
+    }
+  }
+}
+
+/* Laptops */
+@media (min-width: 992px) {
+  body {
+    max-width: 920px;
+  }
+  .section-header {
+    gap: 0.5rem;
+    & .hash {
+      font-size: var(--largeMobile);
+    }
+    & h1 {
+      font-size: var(--largeMobile);
+    }
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1920px) {
+  body {
+    max-width: 1400px;
+  }
+  .section-header {
+    gap: 0.5rem;
+    & .hash {
+      font-size: var(--largeMobile);
+    }
+    & h1 {
+      font-size: var(--largeMobile);
+    }
+  }
+}

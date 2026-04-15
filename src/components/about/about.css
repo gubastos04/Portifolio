@@ -1,0 +1,50 @@
+.about {
+  max-width: 1400px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container-about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  & p {
+    text-align: justify;
+    font-size: var(--small);
+    font-family: var(--secondaryFont);
+    color: var(--white);
+  }
+}
+
+.container-about svg {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .container-about p {
+    font-size: var(--smallMobile);
+  }
+}
+
+/* Tablet */
+
+@media (min-width: 482px) and (max-width: 768px) {
+  .container-about p {
+    font-size: var(--mediumMobile);
+  }
+}
+
+/* Laptops */
+@media (min-width: 768px) {
+  .container-about p {
+    font-size: var(--mediumMobile);
+  }
+}

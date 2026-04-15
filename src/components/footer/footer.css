@@ -1,0 +1,23 @@
+.footer {
+  border-top: 0.5px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  font-family: var(--primaryFont);
+  font-size: var(--small);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-name {
+  color: var(--white);
+  letter-spacing: 0.1em;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .footer {
+    font-size: var(--smallMobile);
+    flex-direction: column;
+  }
+}
