@@ -1,4 +1,5 @@
 <div align="center">
+
 # Gustavo Vieira Bastos — Portfólio
 
 **Portfólio pessoal desenvolvido em React, com dados reais da GitHub API e design minimalista dark.**
@@ -71,15 +72,15 @@ src/
 
 ## Tecnologias
 
-| Tecnologia | Uso |
-|---|---|
-| [React 18](https://reactjs.org/) | UI, hooks, componentização |
-| [Vite](https://vitejs.dev/) | Build tool e dev server |
-| [CSS Modules](https://github.com/css-modules/css-modules) | Estilos por componente (colocation) |
-| [Font Awesome](https://fontawesome.com/) | Ícones SVG (email, GitHub, LinkedIn, Figma) |
-| [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) | Fonte monospace principal |
-| [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk) | Fonte sans-serif para parágrafos |
-| [GitHub REST API v3](https://docs.github.com/en/rest) | Dados de linguagens dos repositórios |
+| Tecnologia                                                         | Uso                                         |
+| ------------------------------------------------------------------ | ------------------------------------------- |
+| [React 18](https://reactjs.org/)                                   | UI, hooks, componentização                  |
+| [Vite](https://vitejs.dev/)                                        | Build tool e dev server                     |
+| [CSS Modules](https://github.com/css-modules/css-modules)          | Estilos por componente (colocation)         |
+| [Font Awesome](https://fontawesome.com/)                           | Ícones SVG (email, GitHub, LinkedIn, Figma) |
+| [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) | Fonte monospace principal                   |
+| [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)   | Fonte sans-serif para parágrafos            |
+| [GitHub REST API v3](https://docs.github.com/en/rest)              | Dados de linguagens dos repositórios        |
 
 ---
 
@@ -90,52 +91,24 @@ As variáveis CSS globais estão centralizadas em `global.css`:
 ```css
 :root {
   /* Cores */
-  --background:     rgb(40, 44, 51);
+  --background: rgb(40, 44, 51);
   --backgroundGray: rgba(78, 78, 78, 0.2);
-  --purple:         rgb(199, 120, 221);   /* cor de destaque */
-  --white:          rgb(255, 255, 255);
-  --gray:           rgba(255, 255, 255, 0.7);
+  --purple: rgb(199, 120, 221); /* cor de destaque */
+  --white: rgb(255, 255, 255);
+  --gray: rgba(255, 255, 255, 0.7);
 
   /* Fontes */
-  --primaryFont:    'JetBrains Mono', monospace;
-  --secondaryFont:  'Space Grotesk', sans-serif;
+  --primaryFont: "JetBrains Mono", monospace;
+  --secondaryFont: "Space Grotesk", sans-serif;
 
   /* Escala */
-  --small:        0.875rem;
-  --medium:       1.25rem;
-  --large:        2rem;
-  --smallMobile:  0.635rem;
+  --small: 0.875rem;
+  --medium: 1.25rem;
+  --large: 2rem;
+  --smallMobile: 0.635rem;
   --mediumMobile: 1rem;
-  --largeMobile:  1.6rem;
+  --largeMobile: 1.6rem;
 }
-```
-
----
-
-## Rodando localmente
-
-**Pré-requisitos:** Node.js 18+ e npm (ou pnpm / yarn)
-
-```bash
-# Clone o repositório
-git clone https://github.com/gubastos04/portfolio.git
-cd portfolio
-
-# Instale as dependências
-npm install
-
-# Inicie o servidor de desenvolvimento
-npm run dev
-```
-
-Acesse `http://localhost:5173` no navegador.
-
-```bash
-# Build para produção
-npm run build
-
-# Preview do build
-npm run preview
 ```
 
 ---
@@ -150,11 +123,11 @@ const projects = [
     title: "Nome do Projeto",
     desc: "Descrição curta do projeto.",
     tags: ["React", "CSS", "Firebase"],
-    image: minhaImagem,            // import da imagem
+    image: minhaImagem, // import da imagem
     links: [
       { label: "GitHub", url: "https://github.com/..." },
-      { label: "Live",   url: "https://meu-projeto.vercel.app" },
-      { label: "Figma",  url: "https://figma.com/..." },
+      { label: "Live", url: "https://meu-projeto.vercel.app" },
+      { label: "Figma", url: "https://figma.com/..." },
     ],
   },
 ];
@@ -166,12 +139,12 @@ Labels suportados nos links: `GitHub`, `Live`, `Figma`.
 
 ## Responsividade
 
-| Breakpoint | Faixa | Comportamento |
-|---|---|---|
-| Mobile | `≤ 480px` | Menu oculto, fontes reduzidas, layout em coluna |
-| Tablet | `481px – 768px` | Menu oculto, layout adaptado |
-| Laptop | `769px – 992px` | Menu visível, escala intermediária |
-| Desktop | `≥ 1920px` | Layout completo, max-width: 1400px |
+| Breakpoint | Faixa           | Comportamento                                   |
+| ---------- | --------------- | ----------------------------------------------- |
+| Mobile     | `≤ 480px`       | Menu oculto, fontes reduzidas, layout em coluna |
+| Tablet     | `481px – 768px` | Menu oculto, layout adaptado                    |
+| Laptop     | `769px – 992px` | Menu visível, escala intermediária              |
+| Desktop    | `≥ 1920px`      | Layout completo, max-width: 1400px              |
 
 ---
 
