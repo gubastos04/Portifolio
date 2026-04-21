@@ -1,8 +1,8 @@
 <div align="center">
 
-# Gustavo Vieira Bastos — Portifolio
+# Gustavo Vieira Bastos — Portfólio
 
-**Portifolio pessoal desenvolvido em React, com dados reais da GitHub API e design minimalista dark.**
+**Portfólio pessoal desenvolvido em React, com dados reais da GitHub API e design minimalista dark.**
 
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-latest-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
@@ -17,9 +17,9 @@
 
 ## Sobre
 
-Site pessoal desenvolvido do zero com **React + Vite**, apresentando meu perfil como desenvolvedor front-end. O projeto vai além do Portifolio estático tradicional: a seção de Skills consome a **GitHub API** para exibir estatísticas reais de linguagens de programação calculadas a partir dos meus repositórios públicos.
+Site pessoal desenvolvido do zero com **React + Vite**, apresentando meu perfil como desenvolvedor front-end. O projeto vai além do Portfólio estático tradicional: a seção de Skills consome a **GitHub API** para exibir estatísticas reais de linguagens de programação calculadas a partir dos meus repositórios públicos.
 
-> Design dark, tipografia monospace e uma paleta roxa discreta — feito para parecer código, mas funcionar como Portifolio.
+> Design dark, tipografia monospace e uma paleta roxa discreta — feito para parecer código, mas funcionar como Portfólio.
 
 ---
 
@@ -45,7 +45,7 @@ src/
 │
 ├── assets/
 │   ├── svg.jsx               # Ilustração SVG inline (seção About)
-│   └── portifolio.png        # Preview dos cards de projeto
+│   └── Portfólio.png        # Preview dos cards de projeto
 │
 └── components/
     ├── about/
