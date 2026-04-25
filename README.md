@@ -17,9 +17,9 @@
 
 ## Sobre
 
-Site pessoal desenvolvido do zero com **React + Vite**, apresentando meu perfil como desenvolvedor front-end. O projeto vai além do portfólio estático tradicional: a seção de Skills consome a **GitHub API** para exibir estatísticas reais de linguagens de programação calculadas a partir dos meus repositórios públicos.
+Site pessoal desenvolvido do zero com **React + Vite**, apresentando meu perfil como desenvolvedor front-end. O projeto vai além do Portfólio estático tradicional: a seção de Skills consome a **GitHub API** para exibir estatísticas reais de linguagens de programação calculadas a partir dos meus repositórios públicos.
 
-> Design dark, tipografia monospace e uma paleta roxa discreta — feito para parecer código, mas funcionar como portfólio.
+> Design dark, tipografia monospace e uma paleta roxa discreta — feito para parecer código, mas funcionar como Portfólio.
 
 ---
 
@@ -45,7 +45,7 @@ src/
 │
 ├── assets/
 │   ├── svg.jsx               # Ilustração SVG inline (seção About)
-│   └── portifolio.png        # Preview dos cards de projeto
+│   └── Portfólio.png        # Preview dos cards de projeto
 │
 └── components/
     ├── about/
