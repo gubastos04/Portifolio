@@ -1,0 +1,126 @@
+.skills-section {
+  background: var(--bg);
+}
+
+.skills-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.skills-intro p {
+  color: var(--muted);
+  line-height: 1.85;
+  font-size: 0.92rem;
+  margin-bottom: 1rem;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.tool-chip {
+  padding: 0.6rem 1rem;
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: 2px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-align: center;
+  transition: all 0.25s ease;
+  cursor: default;
+}
+
+.tool-chip:hover {
+  border-color: var(--border);
+  color: var(--vio);
+  background: var(--vio-dim);
+}
+
+/* Skill bars */
+.skills-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skills-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-loading::after {
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 1rem;
+  border: 3px solid rgba(255, 255, 255, 0.12);
+  color: var(--vio);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: skillsSpin 0.85s linear infinite;
+}
+
+@keyframes skillsSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.skill-row__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+  font-size: 0.82rem;
+}
+
+.skill-row__name {
+  color: var(--text);
+}
+
+.skill-row__pct {
+  color: var(--vio);
+  font-variant-numeric: tabular-nums;
+  font-family: var(--ff-title);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.skill-track {
+  height: 3px;
+  background: var(--bg3);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  width: var(--target, 0%);
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--vio2), var(--vio));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .skills-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

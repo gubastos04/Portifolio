@@ -1,0 +1,140 @@
+/* ── Global Reset & Variables ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0e0e10;
+  --bg2: #161619;
+  --bg3: #1e1e23;
+  --vio: #a855f7;
+  --vio2: #7c3aed;
+  --vio-dim: rgba(168, 85, 247, 0.12);
+  --vio-glow: rgba(168, 85, 247, 0.25);
+  --text: #f4f3f8;
+  --muted: #6b6a74;
+  --border: rgba(168, 85, 247, 0.18);
+  --border2: rgba(255, 255, 255, 0.07);
+  --ff-title: 'Syne', sans-serif;
+  --ff-body: 'Instrument Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ── Utility Classes ── */
+.accent { color: var(--vio); }
+
+.btn {
+  padding: 0.75rem 1.8rem;
+  border-radius: 2px;
+  font-family: var(--ff-body);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.25s ease;
+}
+
+.btn-fill {
+  background: var(--vio);
+  color: #fff;
+}
+
+.btn-fill:hover {
+  background: var(--vio2);
+  transform: translateY(-2px);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border2);
+}
+
+.btn-ghost:hover {
+  border-color: var(--vio);
+  color: var(--vio);
+}
+
+/* ── Section Common ── */
+section {
+  padding: 5.5rem 6%;
+}
+
+.sec-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+.sec-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border2);
+}
+
+/* ── Pill Tags ── */
+.pill {
+  font-size: 0.7rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 2px;
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+.pill.active {
+  background: var(--vio-dim);
+  border-color: var(--border);
+  color: var(--vio);
+}
+
+/* ── Reveal animation ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--bg3); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--vio2); }
