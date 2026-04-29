@@ -1,5 +1,5 @@
 import ProjectOne from '../assets/img_p1.png'
-
+import ProjectTwo from '../assets/img_p2.png'
 
 export const NAV_LINKS = [
   { label: 'Projetos', href: '#projetos' },
@@ -39,9 +39,9 @@ export const PROJECTS = [
     meta: 'Projeto principal · React',
     title: 'Portfólio Pessoal',
     desc: 'Meu site pessoal feito com React. Apresenta meus projetos, habilidades e trajetória como desenvolvedor Web Full Stack com foco em experiência do usuário.',
-    tags: ['React'],
+    tags: ['React', 'Vite', 'CSS', 'HTML', 'JavaScript'],
     links: [
-      { label: '↗ Vercel', href: 'https://portifolio-xi-one-61.vercel.app' },
+      { label: 'Vercel', href: 'https://portifolio-xi-one-61.vercel.app' },
       { label: 'GitHub', href: 'https://github.com/gubastos04/portfolio' },
     ],
     icon: ProjectOne,
@@ -49,19 +49,22 @@ export const PROJECTS = [
   {
     id: 2,
     featured: false,
-    meta: 'Em breve',
-    title: 'Próximo projeto',
-    desc: 'Adicione aqui seu próximo projeto...',
-    tags: ['React'],
-    links: [],
+    meta: 'Em desenvolvimento',
+    title: 'API de Gestão de Agendamentos',
+    desc: 'API REST desenvolvida para gerenciamento completo de um sistema de agendamento para Nail Designers. A plataforma permite que clientes consultem serviços, profissionais e horários disponíveis, além de realizarem agendamentos online de forma prática e intuitiva.',
+    tags: ['Node.js','Express','MongoDB'],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/gubastos04/Knails'}
+    ],
+    icon: ProjectTwo,
   },
   {
     id: 3,
     featured: false,
     meta: 'Em breve',
     title: 'Próximo projeto',
-    desc: 'Mostre sua versatilidade...',
-    tags: ['Node.js'],
+    desc: 'Ainda desenvolvendo...',
+    tags: [],
     links: [],
   },
 ];
