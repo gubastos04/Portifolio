@@ -1,6 +1,8 @@
 import ProjectOne from '../assets/img_p1.png'
 import ProjectTwo from '../assets/img_p2.png'
 
+
+
 export const NAV_LINKS = [
   { label: 'Projetos', href: '#projetos' },
   { label: 'Skills', href: '#skills' },
@@ -35,7 +37,7 @@ export const HERO_PILLS = [
 export const PROJECTS = [
   {
     id: 1,
-    featured: true,
+    featured: false,
     meta: 'Projeto principal · React',
     title: 'Portfólio Pessoal',
     desc: 'Meu site pessoal feito com React. Apresenta meus projetos, habilidades e trajetória como desenvolvedor Web Full Stack com foco em experiência do usuário.',
@@ -48,13 +50,13 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    featured: false,
+    featured: true,
     meta: 'Em desenvolvimento',
     title: 'API de Gestão de Agendamentos',
     desc: 'API REST desenvolvida para gerenciamento completo de um sistema de agendamento. A plataforma permite que clientes consultem serviços, profissionais e horários disponíveis, além de realizarem agendamentos online de forma prática e intuitiva.',
-    tags: ['Node.js','Express','MongoDB'],
+    tags: ['Node.js', 'Express', 'MongoDB'],
     links: [
-      { label: 'GitHub', href: 'https://github.com/gubastos04/Knails'}
+      { label: 'GitHub', href: 'https://github.com/gubastos04/Knails' }
     ],
     icon: ProjectTwo,
   },
@@ -72,8 +74,8 @@ export const PROJECTS = [
 export const CONTACT_ITEMS = [
   {
     label: 'E-mail',
-    value: 'gustavovilairabastos.dev@gmail.com',
-    href: 'mailto:gustavovilairabastos.dev@gmail.com',
+    value: 'gustavovieirabastos.dev@gmail.com',
+    href: 'mailto:gustavovieirabastos.dev@gmail.com',
   },
   {
     label: 'GitHub',

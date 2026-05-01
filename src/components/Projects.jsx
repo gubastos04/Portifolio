@@ -1,14 +1,16 @@
 import { PROJECTS } from "../data";
 import { useReveal } from "../hooks/useReveal";
+import { useState } from "react";
 import "./Projects.css";
 
-function ProjectCard({ project }) {
-  const ref = useReveal();
+function ProjectCard({ project, onToggleFeatured }) {
+  const ref = useReveal(`project-${project.id}`);
 
   return (
     <div
-      className={`proj-card ${project.featured ? "proj-card--featured" : ""} reveal`}
+      className={`proj-card ${project.featured ? "proj-card--featured" : ""} reveal visible`}
       ref={ref}
+      onClick={() => onToggleFeatured(project.id)}
     >
       <div className="proj-thumb">
         <div className="proj-thumb__grid" />
@@ -60,7 +62,18 @@ function ProjectCard({ project }) {
 }
 
 export default function Projects() {
-  const headerRef = useReveal();
+  const headerRef = useReveal('projects-header');
+  const [projects, setProjects] = useState(
+    [...PROJECTS].sort((a, b) => b.featured - a.featured),
+  );
+
+  const toggleFeatured = (id) => {
+    setProjects((prev) =>
+      [...prev]
+        .map((p) => (p.id === id ? { ...p, featured: !p.featured } : p))
+        .sort((a, b) => b.featured - a.featured),
+    );
+  };
 
   return (
     <section id="projetos" className="projects-section">
@@ -70,8 +83,12 @@ export default function Projects() {
       </div>
 
       <div className="projects-grid">
-        {PROJECTS.map((p) => (
-          <ProjectCard key={p.id} project={p} />
+        {projects.map((p) => (
+          <ProjectCard
+            key={p.id}
+            project={p}
+            onToggleFeatured={toggleFeatured}
+          />
         ))}
       </div>
     </section>
