@@ -56,7 +56,7 @@ export const PROJECTS = [
     desc: 'API REST desenvolvida para gerenciamento completo de um sistema de agendamento. A plataforma permite que clientes consultem serviços, profissionais e horários disponíveis, além de realizarem agendamentos online de forma prática e intuitiva.',
     tags: ['Node.js', 'Express', 'MongoDB'],
     links: [
-      { label: 'GitHub', href: 'https://github.com/gubastos04/Knails' }
+      { label: 'GitHub', href: 'https://github.com/gubastos04/API' }
     ],
     icon: ProjectTwo,
   },
